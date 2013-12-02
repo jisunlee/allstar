@@ -1,0 +1,17 @@
+<%= form_tag ({:action =>"login"}) do %>
+  <div class="field">
+    <%= label :name, "名前　" %>
+    <%= text_field_tag("name") %>
+  </div>
+
+  <div class="field">
+    <%= label :birthday, "誕生日" %>
+    <%= date_field_tag :birthday %>
+  </div>
+  <div class="field">
+    <%= label :bloodtype, "血液型" %>
+    <%= text_field_tag :bloodtype %>
+  </div>
+  <%= submit_tag "Send" %>
+<% end %>
+
