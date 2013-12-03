@@ -1,19 +1,14 @@
 class AnswersController < ApplicationController
   before_action :set_answer, only: [:show, :edit, :update, :destroy]
 
-　#http://tenderlovemaking.com/2012/07/30/is-it-live.html
-  include ActionController::Live
+  #include ActionController::Live
 
   
 
   # GET /answers
   # GET /answers.json
   def index
-    #@answers = Answer.all
-    100.times {
-      response.stream.write "hello world\n"
-    }
-    response.stream.close
+    @answers = Answer.all
   end
 
   # GET /answers/1
