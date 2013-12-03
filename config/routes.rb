@@ -1,4 +1,5 @@
 Allstar::Application.routes.draw do
+  get "league/　"
   resources :questions
 
   resources :answers

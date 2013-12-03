@@ -36,7 +36,7 @@ group :test, :development do
  gem 'better_errors'
 
  # Use debugger
- gem 'debugger'
+ gem 'byebug'
  gem 'binding_of_caller'
 end
 	

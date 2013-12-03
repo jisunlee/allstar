@@ -33,6 +33,9 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.1.4)
+    byebug (2.4.0)
+      columnize (~> 0.3.6)
+      debugger-linecache (~> 1.2.0)
     coderay (1.0.9)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -43,12 +46,7 @@ GEM
     coffee-script-source (1.6.3)
     columnize (0.3.6)
     debug_inspector (0.0.2)
-    debugger (1.6.2)
-      columnize (>= 0.3.1)
-      debugger-linecache (~> 1.2.0)
-      debugger-ruby_core_source (~> 1.2.3)
     debugger-linecache (1.2.0)
-    debugger-ruby_core_source (1.2.3)
     erubis (2.7.0)
     execjs (2.0.2)
     hike (1.2.3)
@@ -124,8 +122,8 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  byebug
   coffee-rails (~> 4.0.0)
-  debugger
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.0)
