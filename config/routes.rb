@@ -8,6 +8,9 @@ Allstar::Application.routes.draw do
     collection { post :login }  
   end 
 
+  Reloader::Application.routes.draw do
+    get 'answer' => 'answer#index'
+  end
   #get 'stream' => 'answers#stream'
 
   # The priority is based upon order of creation: first created -> highest priority.
