@@ -40,7 +40,8 @@ group :test, :development do
  gem 'binding_of_caller'
 end
 	
-#gem 'puma'
+gem 'puma'
+gem 'rb-fsevent'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
