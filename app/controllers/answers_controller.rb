@@ -3,6 +3,7 @@ class AnswersController < ApplicationController
 
   #include ActionController::Live
 
+  
 
   # GET /answers
   # GET /answers.json
