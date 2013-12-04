@@ -1,4 +1,12 @@
-<h1>League#　</h1>
-<p>Find me in app/views/league/　.html.erb</p>
+<h1>オールスター</h1>
+
 <!--問題表示するところ-->
+<%= @question_content %><br>
+
 <!--回答を入力するところ-->
+
+<%= form_tag ({:action =>"request"}) do %>
+  <% (1..4).each do |i| %>
+    <%= render partial: "case" ,locals:{@example[i]}%>
+  <% end %>
+<% end %>
