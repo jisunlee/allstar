@@ -1,12 +1,18 @@
 class LeagueController < ApplicationController
-  def quiz 　
-    ##問題を取りに行く処理
+  
+  ##問題を取りに行く処理
+  def quiz
     
     #セッションが空ではないこと確認
     unless session[:q_no].blank?
     
-      #セッション情報から質問問題を取得しビューに渡す
-      @question_content = Question.find(session[:q_no]).try(:content).presence
+      #セッションから質問情報を取得
+      question = Question.find(session[:q_no])
+      
+      #問題
+      @contents = question.try(:content).presence
+      #例
+      @example = question.try(:example).presence.split(",")
     end
   end
   
