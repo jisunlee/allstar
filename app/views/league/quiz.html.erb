@@ -4,6 +4,9 @@
 <%= @question_content %><br>
 
 <!--回答を入力するところ-->
-<% (1..4).each do |i| %>
-	<%= render partial: "case" ,locals:{@example[i]}%>
+
+<%= form_tag ({:action =>"login"}) do %>
+  <% (1..4).each do |i| %>
+    <%= render partial: "case" ,locals:{@example[i]}%>
+  <% end %>
 <% end %>
